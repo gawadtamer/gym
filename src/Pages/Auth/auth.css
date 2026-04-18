@@ -1,0 +1,212 @@
+/* ===============================
+   PREMIUM LOGIN DESIGN - NEO GYM
+   =============================== */
+
+/* make page body match other pages and remove default white margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #0b0b0f; /* dark base similar to rest of site */
+  height: 100%;
+}
+
+
+/* خلفية الصفحة */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top left, #5f72be, #9b23ea 60%, #6a11cb);
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow خلفي احترافي */
+.auth-container::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  filter: blur(120px);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+}
+
+/* الكارت */
+.auth-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 45px 35px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  position: relative;
+  animation: fadeUp 0.9s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* عنوان */
+.auth-wrapper h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff, #ffb3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* الفورم */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* الجروب */
+.form-group {
+  position: relative;
+}
+
+/* الانبوت */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Floating Label */
+.form-group label {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* لما يكتب أو يركز */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #9b23ea;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Focus effect */
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* زرار */
+.auth-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Hover احترافي */
+.auth-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Shine animation */
+.auth-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: skewX(-25deg);
+}
+
+.auth-btn:hover::before {
+  animation: shine 1s forwards;
+}
+
+/* لينك */
+.auth-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.auth-link a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.auth-link a:hover::after {
+  width: 100%;
+}
+
+/* دخول أنيميشن */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+}

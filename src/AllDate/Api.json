@@ -1,0 +1,28 @@
+{
+  "whyUs": [
+    {
+      "id": 1,
+      "image": "images/u-1.png",
+      "titleKey": "whyChooseUs.equipment",
+      "descKey": "whyChooseUs.genericDesc"
+    },
+    {
+      "id": 2,
+      "image": "images/u-4.png",
+      "titleKey": "whyChooseUs.nutrition",
+      "descKey": "whyChooseUs.genericDesc"
+    },
+    {
+      "id": 3,
+      "image": "images/u-2.png",
+      "titleKey": "whyChooseUs.dietPlan",
+      "descKey": "whyChooseUs.genericDesc"
+    },
+    {
+      "id": 4,
+      "image": "images/u-3.png",
+      "titleKey": "whyChooseUs.sportTraining",
+      "descKey": "whyChooseUs.genericDesc"
+    }
+  ]
+}

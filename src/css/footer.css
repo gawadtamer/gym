@@ -1,0 +1,116 @@
+/* --- Professional Neon Gym Footer --- */
+.footer {
+  /* خلفية سوداء بلمسة أرجوانية خفيفة جداً لتناسب صور المشروع */
+  background: radial-gradient(circle at top, #1a1118 0%, #0c0c0c 100%);
+  color: #b0b0b0;
+  font-family: 'Inter', sans-serif;
+  padding: 60px 0 30px 0;
+  border-top: 1px solid rgba(255, 46, 99, 0.1);
+  position: relative;
+}
+
+.footer .footer-inner { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+
+/* اللوجو بنفس ستايل NEOGYM في الصور */
+.footer .logo { 
+  font-size: 26px; 
+  font-weight: 900; 
+  color: #fff; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer .logo .dot { 
+  color: #ff2e63; /* نفس الدرجة الحمراء في صور الـ Elite */
+  text-shadow: 0 0 10px rgba(255, 46, 99, 0.5);
+}
+
+.footer h6 { 
+  color: #fff; 
+  font-size: 18px;
+  margin-bottom: 25px; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer a { 
+  color: #999; 
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+/* تأثير عند الوقوف على اللينكات */
+.footer .link-list li { margin-bottom: 12px; list-style: none; }
+.footer .link-list a:hover { 
+  color: #ff2e63; 
+  padding-left: 8px; /* حركة انزلاق بسيطة */
+}
+
+/* السوشيال ميديا مع تأثير توهج (Glow) */
+.footer .social { display: flex; gap: 15px; }
+.footer .social .social-icon { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 45px; 
+  height: 45px; 
+  background: rgba(255, 255, 255, 0.05); 
+  border-radius: 12px; 
+  color: #fff; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+
+.footer .social .social-icon:hover { 
+  background: #ff2e63; 
+  border-color: #ff2e63;
+  box-shadow: 0 0 20px rgba(255, 46, 99, 0.4);
+  transform: translateY(-5px);
+}
+
+/* الجزء السفلي (Copyright) */
+.footer .footer-bottom { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 50px; 
+  border-top: 1px solid rgba(255, 255, 255, 0.05); 
+  padding-top: 25px; 
+  font-size: 14px;
+}
+
+/* زر العودة للأعلى بشكل مودرن */
+.back-to-top { 
+  position: fixed; 
+  right: 25px; 
+  bottom: 25px; 
+  width: 50px; 
+  height: 50px; 
+  background: #ff2e63; 
+  color: #fff; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 50%; 
+  box-shadow: 0 10px 25px rgba(255, 46, 99, 0.3);
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.back-to-top:hover { 
+  transform: scale(1.1) translateY(-5px);
+  background: #e21e51;
+  box-shadow: 0 15px 30px rgba(255, 46, 99, 0.5);
+}
+
+@media (max-width: 768px) {
+  .footer { text-align: center; }
+  .footer .social { justify-content: center; }
+  .footer .footer-bottom { flex-direction: column; gap: 15px; }
+  .footer .heading_container_elite { text-align: center; border: none; padding: 0; }
+}
