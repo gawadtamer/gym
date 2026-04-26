@@ -77,7 +77,9 @@ const Gawad  = createBrowserRouter([
     element: <DashboardPage />,
   },
 
-]);
+], {
+  basename: process.env.PUBLIC_URL || "/"
+});
 
 createRoot(document.getElementById("root")).render(
   <CartProvider>

@@ -152,7 +152,7 @@ function PlanCard({ plan, index, t, addToCart }) {
       <MagneticBtn
         className="sn-btn-primary"
         style={{ background: plan.color }}
-        onClick={() => addToCart({ id: plan.id, name: t(`smartNutrition.plans.${plan.key}.title`), price: plan.price, image: '/images/supplements/subscription.png' })}
+        onClick={() => addToCart({ id: plan.id, name: t(`smartNutrition.plans.${plan.key}.title`), price: plan.price, image: process.env.PUBLIC_URL + '/images/supplements/subscription.png' })}
       >
         {t('smartNutrition.buttons.subscribe', 'اشترك الآن')}
       </MagneticBtn>

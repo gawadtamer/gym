@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Navbar from '../../Home/Nabar';
 import Footer from '../../Home/Footer';
 import './auth.css';
@@ -95,7 +96,7 @@ function SignUp() {
           </form>
 
           <p className="auth-link" style={{ '--delay': '0.72s' }}>
-            {t('auth.hasAccount')} <a href="/login">{t('auth.login')}</a>
+            {t('auth.hasAccount')} <Link to="/login">{t('auth.login')}</Link>
           </p>
         </div>
       </div>

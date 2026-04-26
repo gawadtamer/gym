@@ -16,7 +16,7 @@ function Details() {
         <div className="ng-img-side">
           <div className="ng-img-bg">
             <img
-              src="/images/contact-img.jpg"
+              src={process.env.PUBLIC_URL + "/images/contact-img.jpg"}
               alt="Gym member training"
               className="ng-actual-img"
             />
